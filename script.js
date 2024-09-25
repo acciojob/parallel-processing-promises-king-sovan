@@ -8,7 +8,7 @@ const images = [
   { url: "https://picsum.photos/id/239/200/300" },
 ];
 
-const downloadImage = (images) => {
+const downloadImage = (image) => {
 	return new Promise((resolve, reject) => {
 		const img = new Image();
 		img.src = image.url;
@@ -20,7 +20,7 @@ const downloadImage = (images) => {
 
 const displayImages = (images) => {
 	images.forEach((img) => {
-		output.appendchild(img);
+		output.appendChild(img);
 	});
 };
 
